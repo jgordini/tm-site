@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Setting</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+     <nav class="bg-green-600 p-4 relative z-20">
+        <div class="container mx-auto flex items-center">
+            <a href="#" class="text-white text-xl font-bold mr-8">IT Talent Management</a>
+            <ul class="relative flex space-x-4">
+                <!-- Dropdown Menu 1 -->
+                <li class="relative">
+                    <button class="text-white focus:outline-none" onclick="toggleDropdown('dropdown-1')">Human Resources</button>
+                    <ul id="dropdown-1" class="dropdown-content absolute left-0 mt-2 space-y-2 bg-white text-black shadow-lg">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Employee Resources</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Manager Resources</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown Menu 2 -->
+                <li class="relative">
+                    <button class="text-white focus:outline-none" onclick="toggleDropdown('dropdown-2')">Organizational Development</button>
+                    <ul id="dropdown-2" class="dropdown-content absolute left-0 mt-2 space-y-2 bg-white text-black shadow-lg">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Performance Management</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Goal Setting</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Peer Review</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">New Manager Learning</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Career Development</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Champions of Excellence</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Leadership Competency</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Blended Work Environment</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown Menu 3 -->
+                <li class="relative">
+                    <button class="text-white focus:outline-none" onclick="toggleDropdown('dropdown-3')">About Us</button>
+                    <ul id="dropdown-3" class="dropdown-content absolute left-0 mt-2 space-y-2 bg-white text-black shadow-lg">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Space Management</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Contact Us</a></li>                      
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="relative z-10">
+        <img src="https://via.placeholder.com/1920x600" alt="Banner Image" class="w-full h-96 object-cover">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50">
+            <h1 class="text-4xl font-bold">Goal Setting</h1>
+            <p class="mt-4 text-xl">Utilize the SMART framework to achieve your goals</p>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container mx-auto my-8 p-6 bg-white rounded-lg shadow-lg">
+        <!-- Main Content -->
+        <div class="w-full">
+            <h2 class="text-3xl font-bold mb-4">Goal Setting</h2>
+            <p class="text-gray-700 mb-6">
+                All UAB IT employees are required to have annual goals. To make goal setting more effective and provide a consistent, structured format for the organization, UAB IT uses the SMART framework to aid in developing clear goals that align with UAB IT’s mission and the mission of the University. Utilize these goal-setting resources below developed specifically for you by UAB IT Talent Management to assist in crafting and documenting your goals.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Smart Goals" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4 mb-2">Smart Goals</h3>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Smart Goals Job Aid" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4 mb-2">Smart Goals Job Aid</h3>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Smart Goals Template" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4 mb-2">Smart Goals Template</h3>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="LinkedIn Learning" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4 mb-2">LinkedIn Learning</h3>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Goal Quality" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4 mb-2">Goal Quality</h3>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Growth Goal Setting" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4 mb-2">Growth Goal Setting</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; UAB IT 2024 </p>
+        </div>
+    </footer>
+		 <script>
+        function toggleDropdown(dropdownId) {
+            const dropdown = document.getElementById(dropdownId);
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.text-white') && !event.target.matches('.dropdown-content') && !event.target.closest('.dropdown-content')) {
+                const dropdowns = document.getElementsByClassName('dropdown-content');
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === 'block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</body>
+</html>
+

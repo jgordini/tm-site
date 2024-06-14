@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .dropdown-content {
+            display: none;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-green-600 p-4 relative z-20">
+        <div class="container mx-auto flex items-center">
+            <a href="#" class="text-white text-xl font-bold mr-8">IT Talent Management</a>
+            <ul class="relative flex space-x-4">
+                <!-- Dropdown Menu 1 -->
+                <li class="relative">
+                    <button class="text-white focus:outline-none" onclick="toggleDropdown('dropdown-1')">Human Resources</button>
+                    <ul id="dropdown-1" class="dropdown-content absolute left-0 mt-2 space-y-2 bg-white text-black shadow-lg">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Employee Resources</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Manager Resources</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown Menu 2 -->
+                <li class="relative">
+                    <button class="text-white focus:outline-none" onclick="toggleDropdown('dropdown-2')">Organizational Development</button>
+                    <ul id="dropdown-2" class="dropdown-content absolute left-0 mt-2 space-y-2 bg-white text-black shadow-lg">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Performance Management</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Goal Setting</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Peer Review</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">New Manager Learning</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Career Development</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Champions of Excellence</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Leadership Competency</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Blended Work Environment</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown Menu 3 -->
+                <li class="relative">
+                    <button class="text-white focus:outline-none" onclick="toggleDropdown('dropdown-3')">About Us</button>
+                    <ul id="dropdown-3" class="dropdown-content absolute left-0 mt-2 space-y-2 bg-white text-black shadow-lg">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Space Management</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Contact Us</a></li>                      
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="relative z-10">
+        <img src="https://via.placeholder.com/1920x600" alt="Banner Image" class="w-full h-96 object-cover">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50">
+            <h1 class="text-4xl font-bold">Performance Management</h1>
+            <p class="mt-4 text-xl">A modern responsive site built with Tailwind CSS</p>
+        </div>
+    </div>
+
+    <!-- Content Section with Sidebar -->
+    <div class="container mx-auto my-8 p-6 bg-white rounded-lg shadow-lg flex flex-col md:flex-row">
+        <!-- Main Content -->
+        <div class="w-full md:w-3/4">
+            <h2 class="text-3xl font-bold mb-4">Performance Management</h2>
+            <p class="text-gray-700 mb-6">
+                Welcome to the Performance Management page. This section provides comprehensive tools and resources to support managers in evaluating and improving employee performance. Whether you are setting annual goals, conducting quarterly meetings, or seeking performance evaluation resources, this page offers the guidance you need to foster a culture of continuous improvement and professional development.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Performance Management Timeline" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4 mb-2">Performance Management Timeline</h3>
+                    <p class="text-gray-700">Explore the timeline of key performance management activities and deadlines throughout the year.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Quarterly Meetings" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4 mb-2">Quarterly Meetings</h3>
+                    <p class="text-gray-700">Learn how to effectively plan and conduct quarterly performance review meetings with your team.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Annual Goals and Training Plans" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4 mb-2">Annual Goals and Training Plans</h3>
+                    <p class="text-gray-700">Set and track annual performance goals and training plans to ensure continuous employee development.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Performance Evaluation Resources" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4 mb-2">Performance Evaluation Resources</h3>
+                    <p class="text-gray-700">Access a variety of resources to help you evaluate employee performance accurately and fairly.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Performance Applications" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4 mb-2">Performance Applications</h3>
+                    <p class="text-gray-700">Utilize performance management applications to streamline the evaluation and feedback process.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="w-full md:w-1/4 md:ml-8 mt-8 md:mt-0">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-4">
+                    <li><a href="#" class="block bg-green-600 text-white text-center py-2 rounded-lg hover:bg-green-700">Facts vs Feelings</a></li>
+                    <li><a href="#" class="block bg-green-600 text-white text-center py-2 rounded-lg hover:bg-green-700">Behavior Guideline Matrix</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; UAB IT 2024 </p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown(dropdownId) {
+            const dropdown = document.getElementById(dropdownId);
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.text-white') && !event.target.matches('.dropdown-content') && !event.target.closest('.dropdown-content')) {
+                const dropdowns = document.getElementsByClassName('dropdown-content');
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === 'block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
